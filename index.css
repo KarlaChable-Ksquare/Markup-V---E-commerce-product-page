@@ -61,7 +61,7 @@ div.navbar > div.menu {
 div.navbar > div.menu > span {
   font-size: x-large;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px rgb(132, 132, 132);
+  text-shadow: 1px 1px 2px rgba(132, 132, 132, 0.65);
 }
 
 div.navbar > div.menu > ul.list-sites {
@@ -234,6 +234,7 @@ div.buyIt > div.acount > input.s-btn {
   border: transparent;
   width: 48px;
   font-size: 20px;
+  font-weight: bolder;
 }
 
 div.buyIt > div.acount > button.s-btn {
