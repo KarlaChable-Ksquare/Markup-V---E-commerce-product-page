@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  /*border: 1px palevioletred solid;*/
   margin: 0rem 8rem;
   display: flex;
   flex-direction: column;
@@ -47,7 +46,6 @@ div.navbar * {
 }
 
 header > div.navbar {
-  /*background-color: rgba(216, 112, 147, 0.1);*/
   padding: 15px 0;
   border-bottom: 2px rgba(128, 128, 128, 0.1) solid;
   display: flex;
@@ -75,8 +73,6 @@ div.navbar > div.menu > ul.list-sites {
 
 div.navbar > div.menu > ul.list-sites * {
   list-style: none;
-  /*border: 1px rgba(58, 8, 24, 0.1) solid;
- background-color: palevioletred;*/
   padding: 0 10px;
   font-size: 13px;
 }
@@ -101,23 +97,17 @@ div.navbar > div.cart > img.user {
 /* MAIN */
 /* Left Shoes */
 main > div.contain {
-  /*border: solid green 1px;
-  padding: 65px 45px 25px 45px;*/
-  padding: 48px;
+  padding: 46px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-self: center;
 }
 
-main > div.contain div.left {
-  /*padding: 10px;*/
+main > div.contain > div.left {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-div.contain > div.left > div.photo-row {
-  display: flex;
+  justify-content: center;
 }
 
 /* gallery */
@@ -127,18 +117,21 @@ div.contain > div.left > img.p-v-photo {
   border-radius: 20px;
 }
 
-div.contain > div.left > div.photo-row > img.p-row {
-  /*border: solid blue 1px;*/
-  height: 65px;
-  width: 65px;
-  margin: 10px 10px;
-  border-radius: 15px;
+div.contain > div.left > div.photo-row:active {
+  border: solid palevioletred 1px;
+  margin: -25px -10px;
 }
 
-div.left > div.photo-row > img.p-filter {
-  filter: blur(0px);
-  -webkit-filter: blur(1px);
-  /*border: solid orangered 2px;*/
+div.contain > div.left > div.photo-row > img.p-row {
+  height: 65px;
+  width: 65px;
+  margin: 25px 10px;
+  border-radius: 12px;
+}
+
+div.left > div.photo-row > img.p-select:active {
+  filter: opacity(40%);
+  border: solid rgb(255, 68, 0) 2px;
 }
 
 /* right Description */
