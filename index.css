@@ -1,13 +1,3 @@
-/*
-xx-small (9px)
-x-small (10px)
-small (13px)
-medium (16px)
-large (18px)
-x-large (24px)
-xx-large (32px)
-*/
-
 html {
   font-family: sans-serif;
   background-color: whitesmoke;
@@ -136,13 +126,10 @@ div.left > div.photo-row > img.p-select:active {
 
 /* right Description */
 main > div.contain > div.right {
-  /*background-color: rgba(194, 230, 136, 0.4);
-  border: solid 1px greenyellow;*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 3rem; /* 36px */
-  /*align-self: center;*/
 }
 
 div.item > p,
@@ -179,7 +166,6 @@ div.right > div.price > div.price-item {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 5px;
-  /*border: solid palevioletred 1px;*/
 }
 
 div.price > div.price-item > span.p-item {
@@ -239,7 +225,7 @@ div.buyIt > div.acount > input.s-btn {
 
 div.buyIt > div.acount > button.s-btn {
   width: 48px;
-  color: rgba(255, 125, 27, 255); /*orange*/
+  color: rgba(255, 125, 27, 255);
   font-weight: bold;
   border: transparent;
   border-radius: 10px;
