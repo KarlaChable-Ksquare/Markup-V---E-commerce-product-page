@@ -117,16 +117,16 @@ div.contain > div.left > img.p-v-photo {
   border-radius: 20px;
 }
 
-div.contain > div.left > div.photo-row:active {
-  border: solid palevioletred 1px;
-  margin: -25px -10px;
-}
-
 div.contain > div.left > div.photo-row > img.p-row {
   height: 65px;
   width: 65px;
   margin: 25px 10px;
   border-radius: 12px;
+}
+
+div.contain > div.left > div.photo-row > img.p-row:active {
+  height: 59px;
+  width: 59px;
 }
 
 div.left > div.photo-row > img.p-select:active {
