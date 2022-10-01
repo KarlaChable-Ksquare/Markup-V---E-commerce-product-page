@@ -1,4 +1,15 @@
+/*
+xx-small (9px)
+x-small (10px)
+small (13px)
+medium (16px)
+large (18px)
+x-large (24px)
+xx-large (32px)
+*/
+
 html {
+  font-family: sans-serif;
   background-color: whitesmoke;
 }
 
@@ -34,34 +45,31 @@ header > div.navbar {
 }
 
 div.navbar > div.menu {
-  /*background-color: pink;*/
   padding: 0px 5px;
   display: flex;
 }
 
-div.navbar > div.menu > p {
-  padding: 0;
-  margin: 0;
-  font-size: xx-large;
+div.navbar > div.menu > span {
+  font-size: x-large;
   font-weight: bolder;
 }
 
 div.navbar > div.menu > ul.list-sites {
+  color: rgb(121, 124, 129);
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 div.navbar > div.menu > ul.list-sites * {
   list-style: none;
   /*border: 1px rgba(58, 8, 24, 0.1) solid;
  background-color: palevioletred;*/
-  padding: 0 25px;
+  padding: 0 10px;
+  font-size: 13px;
 }
 
 div.navbar > div.cart {
-  padding: 0px 15px;
-  /*background-color: rgb(172, 118, 127);*/
   display: flex;
 }
 
@@ -80,16 +88,10 @@ div.navbar > div.cart > img.user {
 
 /* MAIN */
 /* Left Shoes */
-main > div.contain > div.left {
-  background-color: rgba(230, 156, 136, 0.4);
-  border: solid red 1px;
-}
-
 main > div.contain {
-  border: solid green 1px;
-  /*padding: 65px 45px 25px 45px;*/
+  /*border: solid green 1px;
+  padding: 65px 45px 25px 45px;*/
   padding: 48px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-self: center;
@@ -114,7 +116,7 @@ div.contain > div.left > img.p-v-photo {
 }
 
 div.contain > div.left > div.photo-row > img.p-row {
-  border: solid blue 1px;
+  /*border: solid blue 1px;*/
   height: 65px;
   width: 65px;
   margin: 10px 10px;
@@ -124,29 +126,41 @@ div.contain > div.left > div.photo-row > img.p-row {
 div.left > div.photo-row > img.p-filter {
   filter: blur(0px);
   -webkit-filter: blur(1px);
-  border: solid orangered 2px;
+  /*border: solid orangered 2px;*/
 }
 
 /* right Description */
 main > div.contain > div.right {
-  background-color: rgba(194, 230, 136, 0.4);
-  border: solid 1px greenyellow;
+  /*background-color: rgba(194, 230, 136, 0.4);
+  border: solid 1px greenyellow;*/
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 3rem; /* 36px */
   /*align-self: center;*/
 }
 
-div.item,
-div.description {
+div.item > p,
+div.item > span {
+  font-weight: bold;
+}
+
+div.contain > div.right > div.item > p {
+  color: rgba(255, 125, 27, 255);
+  font-size: 12px;
+}
+
+div.contain > div.right > div.item > span {
+  font-size: xx-large;
+}
+
+div.description > span {
+  font-size: small;
   text-align: justify;
 }
 
-div.item,
-div.description,
-div.price,
-div.buyIt {
-  margin: 0 3rem 0 3rem;
+span.span-gray {
+  color: rgb(121, 124, 129);
 }
 
 div.contain > div.right > div.price {
@@ -154,11 +168,42 @@ div.contain > div.right > div.price {
   flex-direction: column;
 }
 
+div.right > div.price > div.price-item {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  /*border: solid palevioletred 1px;*/
+}
+
+div.price > div.price-item > span.p-item {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+div.price > div.price-item > span.p-discount {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 5px 7px;
+  border-radius: 3px;
+  background-color: rgb(252, 238, 227);
+  color: rgba(255, 125, 27, 255);
+}
+
+div.price > span.s-g {
+  color: rgba(121, 124, 129, 0.6);
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 div.contain > div.right > div.buyIt {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 div.addCart {
@@ -167,20 +212,16 @@ div.addCart {
   align-items: center;
 }
 
-button.btn {
-  border: transparent;
-  border-radius: 6px;
-  height: 48px;
-}
-
 div.buyIt > div.acount * {
-  background-color: gainsboro;
+  background-color: rgba(235, 236, 242, 0.6);
+  font-size: 20px;
 }
 
 div.buyIt > div.acount {
-  background-color: gainsboro;
-  display: flex;
+  background-color: rgba(235, 236, 242, 0.6);
   height: 48px;
+  border-radius: 10px;
+  display: flex;
 }
 
 div.buyIt > div.acount > input.s-btn {
@@ -190,19 +231,33 @@ div.buyIt > div.acount > input.s-btn {
   font-size: 20px;
 }
 
-div.buyIt > div.acount > button.btn {
+div.buyIt > div.acount > button.s-btn {
   width: 48px;
-  color: orangered;
+  color: rgba(255, 125, 27, 255); /*orange*/
   font-weight: bold;
+  border: transparent;
+  border-radius: 10px;
 }
 
 div.addCart > button.btn {
-  background-color: rgba(255, 68, 0, 0.4);
+  color: white;
+  box-shadow: -3px 39px 99px -7px rgba(255, 125, 27, 0.69);
+  -webkit-box-shadow: -3px 39px 99px -7px rgba(255, 125, 27, 0.69);
+  -moz-box-shadow: -3px 39px 99px -7px rgba(255, 125, 27, 0.69);
+  background-color: rgba(255, 125, 27, 255);
+  border: transparent;
+  border-radius: 6px;
+  height: 48px;
+  width: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.addCart > button.btn > img.shopcart {
-  padding: 0 32px;
-  width: 6px;
-  height: 6px;
+  padding: 0 12px;
+  width: 18px;
+  height: 18px;
   transform: scaleX(-1);
+  filter: invert(1);
 }
